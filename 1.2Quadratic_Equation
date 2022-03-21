@@ -1,0 +1,37 @@
+public class QuadraticEquation {
+ public static void main(String[]Strings)
+ {
+     double a=Double.parseDouble(Strings[0]);
+     double b=Double.parseDouble(Strings[1]);
+     double c=Double.parseDouble(Strings[2]);
+     double d=(b*b)-(4.0*a*c);
+     System.out.println("The values are a="+a+" b= "+b+" c= "+c;
+     System.out.println("Discriminent Value : "+Math.pow(d,0.5));
+     if(Double.isNaN(d))
+         System.out.println("Equation has no roots");
+     if(d>0.0)
+     {
+         double r1=(-b+Math.pow(d,0.5))/(2.0*a);
+         double r2=(-b-Math.pow(d,0.5))/(2.0*a);
+         System.out.println("The roots are "+r1+"and"+r2);
+     }
+     else if(d==0.0)
+     {
+         double r1=-b/(2.0*a);
+         System.out.println("The root is"+r1);
+     }
+     else
+     {
+         System.out.println("The roots are not real);
+     }
+}
+
+
+output:
+
+
+run:
+The values are a=1.0 b= 3.0 c= 2.0
+Discriminent Value : 1.0
+The roots are -1.0and-2.0
+BUILD SUCCESSFUL (total time: 0 seconds)
