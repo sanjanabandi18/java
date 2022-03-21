@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class Fibonacci_Even {
+    public static void main(String args[])
+    {
+        int f=0,s=1,t=0,sum=0,a[]=new int[100];
+        Scanner input=new Scanner(System.in);
+        a[0]=0;
+        a[1]=1;
+        System.out.println("Enter the range for Fibonacci Series");
+        int range=input.nextInt();
+        System.out.println("The Fibonacci Series is as follows : ");
+        System.out.print(0);
+        System.out.print(" "+1);
+        for(int i=2;i<=range;i++)
+        {
+            t=f+s;
+            System.out.print(" "+t);
+            a[i]=t;
+            f=s;
+            s=t; 
+        }
+        for(int i=2;i<=range;i++)
+        {
+            if(i%2==0)
+                sum=sum+a[i];
+        }
+        System.out.println("\n"+"Sum of Even Terms in FibonacciSeries upto a range "+range+" is : "+sum);
+    }
+}
+
+
+output:
+
+
+run:
+Enter the range for Fibonacci Series
+10
+The Fibonacci Series is as follows : 
+0 1 1 2 3 5 8 13 21 34 55
+Sum of Even Terms in FibonacciSeries upto a range 10 is : 88
+BUILD SUCCESSFUL (total time: 4 seconds)
