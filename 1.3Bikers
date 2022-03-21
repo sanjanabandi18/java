@@ -1,0 +1,34 @@
+public class Bikers {
+    public static void main(String[] Strings)
+    {
+     double a=Double.parseDouble(Strings[0]);
+     double b=Double.parseDouble(Strings[1]);
+     double c=Double.parseDouble(Strings[2]);
+     double d=Double.parseDouble(Strings[3]);  
+     double e=Double.parseDouble(Strings[4]);
+     double Avg_speed=(a+b+c+d+e)/5;
+     System.out.println("The speed of the Racers are  " +a+"\t"+b+"\t"+c+"\t"+d+"\t"+e);
+     System.out.println("The Average speed for qualifying the Racers is"+Avg_speed);
+     if(a>Avg_speed)
+         System.out.println("Racer 1 is qualified with speed "+a+" which is more than the Average speed "+Avg_speed);
+     if(b>Avg_speed)
+         System.out.println("Racer 2 is qualified with speed "+b+" which is more than the Average speed "+Avg_speed);
+     if(c>Avg_speed)
+         System.out.println("Racer 3 is qualified with speed "+c+" which is more than the Average speed "+Avg_speed);
+     if(d>Avg_speed)
+         System.out.println("Racer 4 is qualified with speed "+d+" which is more than the Average speed "+Avg_speed);
+     if(e>Avg_speed)
+         System.out.println("Racer 5 is qualified with speed "+e+" which is more than the Average speed "+Avg_speed);
+    }
+}
+
+output:
+
+run:
+The speed of the Racers are  36.0	45.0	34.0	52.0	56.0
+The Average speed for qualifying the Racers is44.6
+Racer 2 is qualified with speed 45.0 which is more than the Average speed 44.6
+Racer 4 is qualified with speed 52.0 which is more than the Average speed 44.6
+Racer 5 is qualified with speed 56.0 which is more than the Average speed 44.6
+BUILD SUCCESSFUL (total time: 0 seconds)
+
