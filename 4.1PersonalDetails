@@ -1,0 +1,53 @@
+import java.util.Scanner;
+public class PersonalDetails {
+ String fname,mname,name,qualification;
+ Scanner input=new Scanner(System.in);
+ public void getPersonal()
+ {
+     System.out.println("Enter your name : ");
+     name=input.nextLine();
+     System.out.println("Enter your Father name : ");
+     fname=input.nextLine();
+     System.out.println("Enter your Mother name : ");
+     mname=input.nextLine();
+ }
+ public void getQualification()
+ {
+     System.out.println("Enter your qualification : ");
+     qualification=input.nextLine();
+ }
+ public void putPersonal()
+ {
+     System.out.println("Your name is : "+name);
+     System.out.println("Your Father's name is : "+ fname);
+     System.out.println("Your Mother's name is : "+ mname);
+ }
+  public void putQualification()
+  {
+     System.out.println("Your qualification is : "+ qualification); 
+  }
+  public static void main(String a[])
+  {
+      PersonalDetails pd=new PersonalDetails();
+      pd.getPersonal();
+      pd.getQualification();
+      pd.putPersonal();
+      pd.putQualification();
+  }
+}
+
+output:
+
+Enter your name : 
+Sanjana
+Enter your Father name : 
+Narasimha Raju
+Enter your Mother name : 
+Asha Devi
+Enter your qualification : 
+B.Tech
+Your name is : Sanjana
+Your Father's name is : Narasimha Raju
+Your Mother's name is : Asha Devi
+Your qualification is : B.Tech
+BUILD SUCCESSFUL (total time: 29 seconds)
