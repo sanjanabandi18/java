@@ -1,0 +1,31 @@
+public class COverloading {
+   public COverloading()
+    {
+        System.out.println("Default Constructor");
+    }
+    public COverloading(String a)
+    {
+        System.out.println("Parameter passed :"+a);
+    }
+    public COverloading(int a,int b)
+    {
+        System.out.println("Two arguments passed.They are A :"+a+" B : "+b);
+        System.out.println("Sum of "+a+" and"+b+" is : "+(a+b));
+    }
+
+public static void main(String[] arg)
+    {
+        COverloading c=new COverloading();
+        COverloading c1=new COverloading("Hello");
+        COverloading c2=new COverloading(10,20);
+    }
+}
+
+
+output:
+
+Default Constructor
+Parameter passed :Hello
+Two arguments passed.They are A :10 B : 20
+Sum of 10 and20 is : 30
+BUILD SUCCESSFUL (total time: 0 seconds)
