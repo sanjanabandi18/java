@@ -1,0 +1,68 @@
+import java.util.Arrays;
+public class Sort_Strings {
+    public static void main(String args[])
+    {
+        //defining an array of type string
+        String[] countries={"Zimbabwe", "South-Africa", "India", "America", "Yugoslavia", " Australia", "Denmark", "France", "Netherlands", "Italy", "Germany"};
+        int size=countries.length;
+        //lgic for sorting
+        for(int i=0;i<size-1;i++)
+        {
+            for(int j=i+1;j<countries.length;j++)
+            {
+                //comparing each elements of the array to all the remaining elements
+                if(countries[i].compareTo(countries[j])>0)   
+                {  
+                    //swapping array elements  
+                    String temp = countries[i];  
+                    countries[i] = countries[j];  
+                    countries[j] = temp;  
+                  System.out.println(Arrays.toString(countries));
+                  }  
+            }  
+        }  
+        //prints the sorted array in ascending order  
+System.out.println(Arrays.toString(countries));  
+}  
+}  
+            
+            
+            
+output:
+
+[South-Africa, Zimbabwe, India, America, Yugoslavia,  Australia, Denmark, France, Netherlands, Italy, Germany]
+[India, Zimbabwe, South-Africa, America, Yugoslavia,  Australia, Denmark, France, Netherlands, Italy, Germany]
+[America, Zimbabwe, South-Africa, India, Yugoslavia,  Australia, Denmark, France, Netherlands, Italy, Germany]
+[ Australia, Zimbabwe, South-Africa, India, Yugoslavia, America, Denmark, France, Netherlands, Italy, Germany]
+[ Australia, South-Africa, Zimbabwe, India, Yugoslavia, America, Denmark, France, Netherlands, Italy, Germany]
+[ Australia, India, Zimbabwe, South-Africa, Yugoslavia, America, Denmark, France, Netherlands, Italy, Germany]
+[ Australia, America, Zimbabwe, South-Africa, Yugoslavia, India, Denmark, France, Netherlands, Italy, Germany]
+[ Australia, America, South-Africa, Zimbabwe, Yugoslavia, India, Denmark, France, Netherlands, Italy, Germany]
+[ Australia, America, India, Zimbabwe, Yugoslavia, South-Africa, Denmark, France, Netherlands, Italy, Germany]
+[ Australia, America, Denmark, Zimbabwe, Yugoslavia, South-Africa, India, France, Netherlands, Italy, Germany]
+[ Australia, America, Denmark, Yugoslavia, Zimbabwe, South-Africa, India, France, Netherlands, Italy, Germany]
+[ Australia, America, Denmark, South-Africa, Zimbabwe, Yugoslavia, India, France, Netherlands, Italy, Germany]
+[ Australia, America, Denmark, India, Zimbabwe, Yugoslavia, South-Africa, France, Netherlands, Italy, Germany]
+[ Australia, America, Denmark, France, Zimbabwe, Yugoslavia, South-Africa, India, Netherlands, Italy, Germany]
+[ Australia, America, Denmark, France, Yugoslavia, Zimbabwe, South-Africa, India, Netherlands, Italy, Germany]
+[ Australia, America, Denmark, France, South-Africa, Zimbabwe, Yugoslavia, India, Netherlands, Italy, Germany]
+[ Australia, America, Denmark, France, India, Zimbabwe, Yugoslavia, South-Africa, Netherlands, Italy, Germany]
+[ Australia, America, Denmark, France, Germany, Zimbabwe, Yugoslavia, South-Africa, Netherlands, Italy, India]
+[ Australia, America, Denmark, France, Germany, Yugoslavia, Zimbabwe, South-Africa, Netherlands, Italy, India]
+[ Australia, America, Denmark, France, Germany, South-Africa, Zimbabwe, Yugoslavia, Netherlands, Italy, India]
+[ Australia, America, Denmark, France, Germany, Netherlands, Zimbabwe, Yugoslavia, South-Africa, Italy, India]
+[ Australia, America, Denmark, France, Germany, Italy, Zimbabwe, Yugoslavia, South-Africa, Netherlands, India]
+[ Australia, America, Denmark, France, Germany, India, Zimbabwe, Yugoslavia, South-Africa, Netherlands, Italy]
+[ Australia, America, Denmark, France, Germany, India, Yugoslavia, Zimbabwe, South-Africa, Netherlands, Italy]
+[ Australia, America, Denmark, France, Germany, India, South-Africa, Zimbabwe, Yugoslavia, Netherlands, Italy]
+[ Australia, America, Denmark, France, Germany, India, Netherlands, Zimbabwe, Yugoslavia, South-Africa, Italy]
+[ Australia, America, Denmark, France, Germany, India, Italy, Zimbabwe, Yugoslavia, South-Africa, Netherlands]
+[ Australia, America, Denmark, France, Germany, India, Italy, Yugoslavia, Zimbabwe, South-Africa, Netherlands]
+[ Australia, America, Denmark, France, Germany, India, Italy, South-Africa, Zimbabwe, Yugoslavia, Netherlands]
+[ Australia, America, Denmark, France, Germany, India, Italy, Netherlands, Zimbabwe, Yugoslavia, South-Africa]
+[ Australia, America, Denmark, France, Germany, India, Italy, Netherlands, Yugoslavia, Zimbabwe, South-Africa]
+[ Australia, America, Denmark, France, Germany, India, Italy, Netherlands, South-Africa, Zimbabwe, Yugoslavia]
+[ Australia, America, Denmark, France, Germany, India, Italy, Netherlands, South-Africa, Yugoslavia, Zimbabwe]
+[ Australia, America, Denmark, France, Germany, India, Italy, Netherlands, South-Africa, Yugoslavia, Zimbabwe]
+
+
