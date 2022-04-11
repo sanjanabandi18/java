@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class String_Buffer_Delete {
+    public static void main(String []arg)
+    {
+        Scanner input=new Scanner(System.in);
+        System.out.println("Enter a String : ");
+        String name=input.nextLine();
+        System.out.println("Enter which index to delete: ");
+        int a=input.nextInt();
+        StringBuffer b=new StringBuffer(name);
+        System.out.println("String before deleting: "+b);
+        b.delete(a-1,a);
+        System.out.println("String after deleting: "+b);
+    } 
+}
+
+output:
+
+run:
+Enter a String : 
+ratna
+Enter which index to delete: 
+3
+String before deleting: ratna
+String after deleting: rana
+BUILD SUCCESSFUL (total time: 5 seconds)
