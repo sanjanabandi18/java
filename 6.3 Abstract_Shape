@@ -1,0 +1,81 @@
+import java.util.*;
+abstract class shape
+{
+    int a,b;
+    abstract public void printarea();
+}
+class rectangle extends shape
+{
+    public int area_rect;
+    public void printarea()
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter the length and breadth of rectangle");
+        a=s.nextInt();
+        b=s.nextInt();
+        area_rect=a*b;
+        System.out.println("Length of rectangle is "+a+" and breadth of rectangle is "+b);
+        System.out.println("The area of rectangle is : "+area_rect);
+    }
+}
+class triangle extends shape
+{
+    double area_tri;
+    public void printarea()
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter the base and heigth of triangle");
+        a=s.nextInt();
+        b=s.nextInt();
+        System.out.println("Base of the triangle is "+a+" and height of the triangle is "+b);
+        area_tri=(0.5*a*b);
+        System.out.println("The area of triangle is : "+area_tri);
+    }
+}
+class circle extends shape{
+    double area_cir;
+    public void printarea()
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter the radius of the circle");
+        a=s.nextInt();
+        System.out.println("Radius of the circle is"+a);
+        area_cir=(3.14*a*a);
+        System.out.println("The area of the circle is : "+area_cir);
+    }
+}
+public class Abstract_Shape {
+    public static void main(String[] args)
+    {
+        rectangle r=new rectangle();
+        r.printarea();
+        triangle t=new triangle();
+        t.printarea();
+        circle c=new circle();
+        c.printarea();
+    }
+}
+
+
+
+OUTPUT:
+
+
+run:
+Enter the length and breadth of rectangle
+8
+4
+Length of rectangle is 8 and breadth of rectangle is 4
+The area of rectangle is : 32
+Enter the base and heigth of triangle
+4
+6
+Base of the triangle is 4 and height of the triangle is 6
+The area of triangle is : 12.0
+Enter the radius of the circle
+3
+Radius of the circle is3
+The area of the circle is : 28.259999999999998
+BUILD SUCCESSFUL (total time: 16 seconds)
+
+
