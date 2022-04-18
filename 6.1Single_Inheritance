@@ -1,0 +1,38 @@
+class base
+{
+    int a,b,sum;
+    base(int x,int y)
+    {
+        a=x;
+        b=y;
+    }
+    public void add()
+    {
+        sum=a+b;
+    }
+}
+class derived extends base
+{
+    derived()
+    {
+        super(10,20);
+    }
+    public void display()
+    {
+        System.out.println("Sum of "+a+" and "+b+" is : "+sum);
+    }
+}
+public class Single_Inheritance {
+  public static void main(String[] args)
+  {
+      derived d=new derived();
+      d.add();
+      d.display();
+  }
+}
+
+output:
+
+run:
+Sum of 10 and 20 is : 30
+BUILD SUCCESSFUL (total time: 0 seconds)
