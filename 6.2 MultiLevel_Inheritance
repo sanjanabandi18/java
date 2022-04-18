@@ -1,0 +1,50 @@
+class Base{
+   public Base()
+    {
+        System.out.println("Inside base class");
+    }
+    public void display()
+    {
+        System.out.println("Grand parent of derived2");
+    }
+}
+class Derived1 extends Base{
+   public Derived1(){
+         super.display();
+        System.out.println("Inside derived1 class");
+}
+    public void display()
+    {
+      
+        System.out.println("Parent of derived2");
+    }
+}
+class Derived2 extends Derived1{
+  public Derived2(){
+       super.display();
+        System.out.println("Inside derived2 class");
+}
+    public void display()
+    {
+        System.out.println("derived2");
+    }
+}
+
+public class MultiLevel_Inheritance {
+    public static void main(String[] args)
+  {
+      Derived2 d = new Derived2();
+      d.display();
+  }
+}
+
+output:
+
+run:
+Inside base class
+Grand parent of derived2
+Inside derived1 class
+Parent of derived2
+Inside derived2 class
+derived2
+BUILD SUCCESSFUL (total time: 0 seconds)
