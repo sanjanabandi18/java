@@ -1,0 +1,20 @@
+public class Exception_multiple_catch {
+    public static void main(String[] args){
+        try {
+            int den= Integer.parseInt(args[0]);
+            Sytem.out.println(3/den);
+        }catch(ArithmeticException e){
+            System.out.println(e.getMessage());
+        }
+        catch(ArrayIndexOutOfBoundsException e){
+            System.out.println(e.getMessage());
+        }
+    }
+}
+
+
+output:
+
+run:
+0
+BUILD SUCCESSFUL (total time: 0 seconds)
